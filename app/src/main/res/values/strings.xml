@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="Hello">ZZ is pig</string>
+    <string name="Button">catch</string>
+    <string name="RadioButton1">cute</string>
+    <string name="RadioButton2">elegant</string>
+</resources>
