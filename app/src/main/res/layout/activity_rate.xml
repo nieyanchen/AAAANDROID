@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".RateActivity">
+
+
+    <EditText
+        android:id="@+id/rmb"
+        android:gravity="center"
+        android:hint="@string/rmb_hit"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <TextView
+        android:id="@+id/showOut"
+        android:textSize="35sp"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:id="@+id/btn_dollar"
+        android:text="@string/btn_dollar_lable"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_euro"
+        android:text="@string/btn_euro_lable"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_won"
+        android:text="@string/btn_won_lable"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_opencfg"
+        android:text="@string/btn_opencfg_lable"
+        android:onClick="openOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    
+</LinearLayout>

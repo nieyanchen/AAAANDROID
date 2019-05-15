@@ -4,4 +4,18 @@
     <string name="Button">catch</string>
     <string name="RadioButton1">cute</string>
     <string name="RadioButton2">elegant</string>
+    <string name="Text">Input Your Name</string>
+    <string name="btn">转换</string>
+    <string name="lable_add1">+1 point</string>
+    <string name="lable_add2">+2 points</string>
+    <string name="lable_add3">+3 points</string>
+    <string name="btn_reset_lable" />
+    <string name="btn_lable_reset">Reset</string>
+    <string name="btn_dollar_lable">Dollar</string>
+    <string name="btn_euro_lable">Euro</string>
+    <string name="btn_won_lable">Won</string>
+    <string name="rmb_hit">Input RMB</string>
+    <string name="btn_opencfg_lable">opencfg</string>
+    <string name="btn_save_lable">Save</string>
+    <string name="lable_open_list">OpenList</string>
 </resources>

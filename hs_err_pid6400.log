@@ -1,0 +1,180 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x0000000064521958, pid=6400, tid=6456
+#
+# JRE version:  (10.0.2+13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13, mixed mode, aot, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x1c1958]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dorg.gradle.appname=gradlew org.gradle.wrapper.GradleWrapperMain compileDebug --stacktrace
+
+Host: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz, 4 cores, 3G,  Windows 10 , 64 bit Build 14393 (10.0.14393.2608)
+Time: Thu May 09 09:36:54 2019 ?D1ú±ê×?ê±?? elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000022c4d653000):  JavaThread "Unknown thread" [_thread_in_vm, id=6456, stack(0x000000bf97e00000,0x000000bf97f00000)]
+
+Stack: [0x000000bf97e00000,0x000000bf97f00000],  sp=0x000000bf97eff8c0,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1c1958]
+V  [jvm.dll+0x1bfe43]
+V  [jvm.dll+0x3519cb]
+V  [jvm.dll+0x6856a2]
+V  [jvm.dll+0x3ba0c3]
+V  [jvm.dll+0x3bc261]
+C  [java.exe+0x3531]
+C  [java.exe+0xe1af]
+C  [java.exe+0xe356]
+C  [KERNEL32.DLL+0x8364]
+C  [ntdll.dll+0x6e851]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x000070d57cb43b08, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x000000bf97eff8c0, RBP=0x0000000000000000, RSI=0x0000022c4d653000, RDI=0x0000000000000000
+R8 =0x0000000000000006, R9 =0x0000000000000007, R10=0x0000000000000006, R11=0x000000bf97eff1d0
+R12=0x0000000000000000, R13=0x00000000648b2ab0, R14=0x000000bf97effd18, R15=0x0000022c4b92b668
+RIP=0x0000000064521958, EFLAGS=0x0000000000010256
+
+Top of Stack: (sp=0x000000bf97eff8c0)
+0x000000bf97eff8c0:   0000000064b01658 00000000648d5c2d
+0x000000bf97eff8d0:   0000000064b693c0 0000000064b01658
+0x000000bf97eff8e0:   0000000000000040 000000bf97eff940
+0x000000bf97eff8f0:   0000022c4d652440 00000000648d6075
+0x000000bf97eff900:   0000022c4d653000 0000000000000000
+0x000000bf97eff910:   0000000000000000 00000000648d5957
+0x000000bf97eff920:   0000000000000000 0000000064926f79
+0x000000bf97eff930:   0000022c4d652440 0000000000000000
+0x000000bf97eff940:   0000000000000000 0000000000000000
+0x000000bf97eff950:   0000000000000004 00000000649275d8
+0x000000bf97eff960:   0000022c4d652440 000070d57cb43b08
+0x000000bf97eff970:   0000000000000004 0000000000000000
+0x000000bf97eff980:   00000000648b2ab0 0000022c4d653000
+0x000000bf97eff990:   000000bf97eff9d0 000000006451fe43
+0x000000bf97eff9a0:   0000000000000000 000000bf97eff9d0
+0x000000bf97eff9b0:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x0000000064521958)
+0x0000000064521938:   c0 00 00 00 48 8b 05 6d 1d 7a 00 48 33 c4 48 89
+0x0000000064521948:   84 24 a8 00 00 00 48 8b e9 48 83 ca ff 48 ff c2
+0x0000000064521958:   80 3c 0a 00 75 f7 33 f6 45 33 ed c6 44 24 30 01
+0x0000000064521968:   85 d2 0f 8e 54 02 00 00 8b 0d e6 6d 81 00 65 48 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000022c4b932010, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+[error occurred during error reporting (printing all threads), id 0xc0000005]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+[error occurred during error reporting (printing compressed oops mode), id 0xc0000005]
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff76e960000 - 0x00007ff76e99e000 	C:\Program Files\Java\jdk-10.0.2\bin\java.exe
+0x00007ff85c340000 - 0x00007ff85c510000 	C:\windows\SYSTEM32\ntdll.dll
+0x00007ff85a040000 - 0x00007ff85a0ec000 	C:\windows\System32\KERNEL32.DLL
+0x00007ff858c90000 - 0x00007ff858ead000 	C:\windows\System32\KERNELBASE.dll
+0x00007ff85c290000 - 0x00007ff85c332000 	C:\windows\System32\ADVAPI32.dll
+0x00007ff859f40000 - 0x00007ff859fde000 	C:\windows\System32\msvcrt.dll
+0x00007ff85bf20000 - 0x00007ff85bf79000 	C:\windows\System32\sechost.dll
+0x00007ff85c090000 - 0x00007ff85c1b1000 	C:\windows\System32\RPCRT4.dll
+0x00007ff859a30000 - 0x00007ff859b95000 	C:\windows\System32\USER32.dll
+0x00007ff859650000 - 0x00007ff85966e000 	C:\windows\System32\win32u.dll
+0x00007ff859d60000 - 0x00007ff859d94000 	C:\windows\System32\GDI32.dll
+0x00007ff858b00000 - 0x00007ff858c81000 	C:\windows\System32\gdi32full.dll
+0x00007ff84b440000 - 0x00007ff84b6ba000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.2608_none_7ddacc7e8347078e\COMCTL32.dll
+0x00007ff85bb60000 - 0x00007ff85be25000 	C:\windows\System32\combase.dll
+0x00007ff8547c0000 - 0x00007ff8547ca000 	C:\windows\SYSTEM32\VERSION.dll
+0x00007ff8597d0000 - 0x00007ff8598c4000 	C:\windows\System32\ucrtbase.dll
+0x00007ff8595e0000 - 0x00007ff85964a000 	C:\windows\System32\bcryptPrimitives.dll
+0x00007ff85ba30000 - 0x00007ff85ba5e000 	C:\windows\System32\IMM32.DLL
+0x00007ff8385b0000 - 0x00007ff83869f000 	C:\Program Files\Java\jdk-10.0.2\bin\msvcr120.dll
+0x00007ff838500000 - 0x00007ff8385a6000 	C:\Program Files\Java\jdk-10.0.2\bin\msvcp120.dll
+0x0000000064360000 - 0x0000000064dd0000 	C:\Program Files\Java\jdk-10.0.2\bin\server\jvm.dll
+0x00007ff859d50000 - 0x00007ff859d58000 	C:\windows\System32\PSAPI.DLL
+0x00007ff856620000 - 0x00007ff856643000 	C:\windows\SYSTEM32\WINMM.dll
+0x00007ff84a020000 - 0x00007ff84a029000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x00007ff85be30000 - 0x00007ff85be9a000 	C:\windows\System32\WS2_32.dll
+0x0000022c4d610000 - 0x0000022c4d63b000 	C:\windows\SYSTEM32\WINMMBASE.dll
+0x00007ff859590000 - 0x00007ff8595d2000 	C:\windows\System32\cfgmgr32.dll
+0x00007ff855bd0000 - 0x00007ff855bdf000 	C:\Program Files\Java\jdk-10.0.2\bin\verify.dll
+0x00007ff854a70000 - 0x00007ff854c02000 	C:\windows\SYSTEM32\DBGHELP.DLL
+0x00007ff849580000 - 0x00007ff8495a9000 	C:\windows\SYSTEM32\dbgcore.DLL
+0x00007ff8549c0000 - 0x00007ff8549e7000 	C:\Program Files\Java\jdk-10.0.2\bin\java.dll
+0x00007ff8549a0000 - 0x00007ff8549b6000 	C:\Program Files\Java\jdk-10.0.2\bin\zip.dll
+0x00007ff854990000 - 0x00007ff85499a000 	C:\Program Files\Java\jdk-10.0.2\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-10.0.2\bin;C:\windows\SYSTEM32;C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.14393.2608_none_7ddacc7e8347078e;C:\Program Files\Java\jdk-10.0.2\bin\server
+
+VM Arguments:
+jvm_args: -Dorg.gradle.appname=gradlew 
+java_command: org.gradle.wrapper.GradleWrapperMain compileDebug --stacktrace
+java_class_path (initial): D:\aaaandroid\AAAANDROID\\gradle\wrapper\gradle-wrapper.jar
+Launcher Type: SUN_STANDARD
+
+Logging:
+Log output configuration:
+#0: stdout all=warning uptime,level,tags
+#1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-10.0.2\
+CLASSPATH=D:\aaaandroid\AAAANDROID\\gradle\wrapper\gradle-wrapper.jar
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\新建文件夹 (2)\PyCharm 2018.3.3\bin;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 14393 (10.0.14393.2608)
+
+CPU:total 4 (initial active 4) 
+
+Memory: 4k page, physical 4071960k(483540k free), swap 9810240k(1178136k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (10.0.2+13) for windows-amd64 JRE (10.0.2+13), built on Jun 28 2018 01:57:56 by "mach5one" with MS VC++ 12.0 (VS2013)
+
+END.
