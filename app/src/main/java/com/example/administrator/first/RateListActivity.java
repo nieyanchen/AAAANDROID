@@ -63,10 +63,7 @@ public class RateListActivity extends ListActivity implements Runnable {
 
             Log.i(TAG,"run" + doc.title());
             Elements tables = doc.getElementsByTag("table");
-           /* for (Element table : tables){
-                Log.i(TAG,"run:table["+i+"]=" + table);
-                i++;
-            }*/
+        
             Element table2 = tables.get(1);
 
             //获取TD中的数据
