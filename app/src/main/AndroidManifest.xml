@@ -15,8 +15,19 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".RateCalcActivity" android:theme="@style/Theme.AppCompat.Light.Dialog"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainPageActivity"></activity>
+        <activity android:name=".LogOn2Activity"></activity>
+        <activity android:name=".LogOnActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RateCalcActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".RateActivity">
             <intent-filter>
@@ -27,7 +38,7 @@
         </activity>
         <activity android:name=".ConfgActivity" />
         <activity android:name=".RateListActivity" />
-        <activity android:name=".MyListActivity" >
+        <activity android:name=".MyListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
